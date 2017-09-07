@@ -13,7 +13,7 @@ def contact(request):
 	if form.is_valid():
 		name = form.cleaned_data['name']
 		comment = form.cleaned_data['comment']
-		subject = 'PANDOZIES BOX MESSAGE'
+		subject = 'DIBBIE BOX MESSAGE'
 		message = '%s %s' %(comment, name)
 		emailFrom = form.cleaned_data['email']
 		emailTo = [settings.EMAIL_HOST_USER]
